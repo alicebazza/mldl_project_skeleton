@@ -34,7 +34,7 @@ def test_model(
         "correct": correct,
     }
 
-
+models_accuracy = {}
 def fit(
     epochs: int,
     train_dl: torch.utils.data.DataLoader,
@@ -42,7 +42,7 @@ def fit(
     model: torch.nn.Module,
     opt: torch.optim.Optimizer,
     tag: str,
-    models_accuracy: dict,
+    models_accuracy: models_accuracy,
     perm: Optional[torch.Tensor] = None,
     device: str = "cuda",
 ) -> float:

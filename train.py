@@ -46,7 +46,6 @@ output_classes=('plane','car','bird','cat','deer','dog','frog','horse','ship','t
 epochs = 4
 n_hidden = 9
 n_features = 6
-models_accuracy = {}
 
 # FULLY CONNECTED LAYER
 model_fnn = FC2Layer(input_size, n_channels, n_hidden, output_size)
