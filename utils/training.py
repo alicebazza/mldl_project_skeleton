@@ -41,7 +41,7 @@ def fit(
     model: torch.nn.Module,
     opt: torch.optim.Optimizer,
     tag: str,
-    models_accuracy: dict
+    models_accuracy: dict,
     perm: Optional[torch.Tensor] = None,
     device: str = "cuda",
 ) -> float:
